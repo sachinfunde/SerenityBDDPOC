@@ -1,0 +1,24 @@
+{
+        "osb": {
+                "url": "https://osbdev.wizink.net/fd/vmx/account/inq/e8vda/rest",
+                "headers": {
+                        "accept": "application/json",
+                        "sessionId": "jkga87123ujh127983612h398yh",
+                        "x-b3-traceId": "0af7651916cd43dd8448eb211c80319c",
+                        "x-b3-spanId": "1231243a13213213",
+                        "x-b3-sampled": "true",
+                        "x-b3-parentSpanId": "545fg546574432v4",
+                        "x-forwarded-for": "192.168.0.1,",
+                        "channel": "WEB",
+                        "customerIdType": "CMFID",
+                        "customerId": "12340",
+                        "country": "ESP",
+                        "product": "WZ-ESP"
+                  },
+                "body": {
+                        "VMX_MSGIN": {
+                                "ACCOUNT": "0005489180810133321"
+                        }
+                }
+            }
+}
