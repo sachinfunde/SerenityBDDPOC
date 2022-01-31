@@ -4,7 +4,7 @@
 This is a simple starter project for Serenity with Cucumber 6 and RestAssured.
 
 Tests are written using a combination of SerenityBDD, RestAssured, Cucumber.
-Tests run with  Junit & Maven.
+Tests run with Maven.
 
 
 
@@ -14,7 +14,6 @@ Tests run with  Junit & Maven.
 - RestAssured
 - Serenity BDD
 - Cucumber
-- JUnit
 - Maven
 
 ## Prerequisites
@@ -28,14 +27,14 @@ The project follows the standard directory structure used in most Serenity proje
 src
   + test
     + java                          
-      + ResponseExtraction                  
-      + Stepdefinitions             
-      + Tests
-      + Utils             
+      + Models                    In this module we will create pojo of our response body when we want to validate full response. will use lombok here.
+      + ResponseExtraction        This class contains jsonpath and xmlpath expressions.eventually which helps to get the response body data so we can validate response           
+      + Stepdefinitions           Here we are maintaining steps of our tests.  
+      + Tests                     In this module we will write our tests as per functionalities in one class. We are clubbing tests as per the functionality.
+      + Utils                     In this module we are maintaining all common functions like. generateAlphnumbericCharacters etc. 
     + resources
-      + features                  Feature files
-      + testData
-
+      + features                  Here we are maintaining the all features as per the functionalities.
+      + testData                  Here we are mainting the test-data of our test cases in "test-data.json" file and verfication messages and details in "verification-data.json". 
 ```
 
 
