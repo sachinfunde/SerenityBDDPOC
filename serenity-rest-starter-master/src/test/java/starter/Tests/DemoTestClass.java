@@ -31,4 +31,9 @@ public class DemoTestClass {
                 when().body(IOUtils.toString(fileInputStream,"UTF-8")).post("/NumberConversion.wso");
     }
 
+    @Step("Verify user information")
+    public void getUserInfo() {
+        SerenityRest.given().when().relaxedHTTPSValidation().get("https://reqres.in/api/users/2");
+    }
+
 }

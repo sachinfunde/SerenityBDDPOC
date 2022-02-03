@@ -74,6 +74,17 @@ public class DemoStepDefinitions {
         restAssuredThat(response -> response.body(DemoApiExtraction.NUMBER_TO_WORD, contains("five hundred ")));
     }
 
+    @When("I provide the userid")
+    public void I_Provide_The_UserId() {
+        demoTestClass.getUserInfo();
+    }
+
+    @When("I should get user information")
+    public void I_Should_Get_User_Information() {
+        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.body(DemoApiExtraction.FIRST_NAME, equalTo("Janet")));
+    }
+
     public static void loadOsbData() {
         try {
             JSONObject osbJsonObject = (JSONObject) testDataFileJsonObject.get("osb");
