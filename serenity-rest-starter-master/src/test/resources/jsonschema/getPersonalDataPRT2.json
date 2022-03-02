@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "personalData": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "int"
+        },
+        
+        "taxId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "surname",
+        "dateOfBirth",
+        "documentId"
+        
+        
+      ]
+    }
+  }
+  
+}

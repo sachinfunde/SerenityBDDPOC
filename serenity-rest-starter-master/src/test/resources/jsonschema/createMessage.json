@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "messageId": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "starred": {
+      "type": "boolean"
+    },
+    "replyable": {
+      "type": "boolean"
+    },
+    "creationDate": {
+      "type": "string"
+    },
+    "attachments": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "attachmentId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "extension": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "attachmentId",
+            "name",
+            "extension"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "messageId",
+    "subject",
+    "body",
+    "read",
+    "starred",
+    "replyable",
+    "creationDate",
+    "attachments"
+  ]
+}

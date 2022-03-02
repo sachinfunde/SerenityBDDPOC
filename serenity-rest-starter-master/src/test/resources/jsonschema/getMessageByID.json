@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "messages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "messageId": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "bodyPreview": {
+              "type": "string"
+            },
+            "read": {
+              "type": "boolean"
+            },
+            "starred": {
+              "type": "boolean"
+            },
+            "hasAttachments": {
+              "type": "boolean"
+            },
+            "creationDate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "messageId",
+            "subject",
+            "bodyPreview",
+            "read",
+            "starred",
+            "hasAttachments",
+            "creationDate"
+          ]
+        }
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "totalResult": {
+          "type": "integer"
+        },
+        "pageSize": {
+          "type": "integer"
+        },
+        "nextPage": {
+          "type": "integer"
+        },
+        "previousPage": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "totalResult",
+        "pageSize",
+        "nextPage",
+        "previousPage"
+      ]
+    }
+  },
+  "required": [
+    "messages",
+    "summary"
+  ]
+}

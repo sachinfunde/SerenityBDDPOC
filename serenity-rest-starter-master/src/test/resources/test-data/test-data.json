@@ -1,24 +1,134 @@
 {
-        "osb": {
-                "url": "https://osbdev.wizink.net/fd/vmx/account/inq/e8vda/rest",
-                "headers": {
-                        "accept": "application/json",
-                        "sessionId": "jkga87123ujh127983612h398yh",
-                        "x-b3-traceId": "0af7651916cd43dd8448eb211c80319c",
-                        "x-b3-spanId": "1231243a13213213",
-                        "x-b3-sampled": "true",
-                        "x-b3-parentSpanId": "545fg546574432v4",
-                        "x-forwarded-for": "192.168.0.1,",
-                        "channel": "WEB",
-                        "customerIdType": "CMFID",
-                        "customerId": "12340",
-                        "country": "ESP",
-                        "product": "WZ-ESP"
-                  },
-                "body": {
-                        "VMX_MSGIN": {
-                                "ACCOUNT": "0005489180810133321"
-                        }
-                }
-            }
+  "messages" : {
+    "createMessage" : {
+      "url" : "http://localhost:9085/messages",
+      "body" : {
+        "subject" : "Message Subject",
+        "body" : "Message Body"
+      }
+    },
+    "deleteMessage" : {
+      "url" : "http://localhost:9085/messages/msg1"
+    },
+    "getMessageByID" : {
+      "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1"
+    },
+    "createMessage_wrongHeader" : {
+      "url" : "http://localhost:9085/messages",
+      "body" : {
+        "subject" : "Message Subject",
+        "body" : "Message Body"
+      }
+    },
+    "createMessage_WithoutAuthToken" : {
+      "url" : "http://localhost:9085/messages",
+      "body" : {
+        "subject" : "Message Subject",
+        "body" : "Message Body"
+      }
+    },
+    "createMessageWithWrongURL" : {
+      "url" : "http://localhost:9085/messages1234",
+      "body" : {
+        "subject" : "Message Subject",
+        "body" : "Message Body"
+      }
+    },
+    "createMessageWithWrongAuth" : {
+      "url" : "http://localhost:9085/messages",
+      "body" : {
+        "subject" : "Message Subject",
+        "body" : "Message Body"
+      }
+    },
+    "deleteMessage_wrongHeader" : {
+      "url" : "http://localhost:9085/messages/msg1"
+    },
+    "deleteMessage_WithoutAuthToken" : {
+      "url" : "http://localhost:9085/messages/msg1"
+    },
+    "deleteMessage_WithWrongURL" : {
+      "url" : "http://localhost:9085/messages/msg123456"
+    },
+    "deleteMessage_WithWrongAuthToken" : {
+      "url" : "http://localhost:9085/messages/msg1"
+    },
+    "getMessage_wrongHeader" : {
+      "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1"
+    },
+    "getMessage_WrongAuthToken" : {
+      "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1"
+    },
+    "getMessage_WithWrongURL" : {
+      "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1234"
+    },
+    "getMessage_WithoutAuthToken" : {
+      "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1"
+    }
+  },
+  "clientProfileAPIS" : {
+    "getContactDataESP" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getContactDataPRT" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getPersonalDataESP" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getPersonalDataPRT" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getContactDataESP_WrongHeader" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getContactDataESP_WithoutAuth" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getContactDataESP_WithWrongURL" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data1234"
+    },
+    "getContactDataESP_WithWrongAuthToken" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getContactDataPRT_WrongHeader" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getContactDataPRT_WithoutAuth" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data"
+    },
+    "getContactDataPRT_WithWrongURL" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data1234"
+    },
+    "getContactDataPRT_WithWrongAuthToken" : {
+      "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+      "headers" : {
+        "accessToken" : "token_prt"
+      }
+    },
+    "getPersonalDataESP_WrongHeader" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getPersonalDataESP_WithoutAuth" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getPersonalDataESP_WithWrongURL" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data1234"
+    },
+    "getPersonalDataESP_WithWrongAuthToken" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getPersonalDataPRT_WrongHeader" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getPersonalDataPRT_WithoutAuth" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    },
+    "getPersonalDataPRT_WithWrongURL" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data1234"
+    },
+    "getPersonalDataPRT_WithWrongAuthToken" : {
+      "url" : "http://localhost:9085/wzc-client-profile/personal-data"
+    }
+  }
 }

@@ -1,0 +1,121 @@
+{
+  "getContactDataESP" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+      "accessToken" : "token_esp"
+    }
+  },
+  "getContactDataPRT" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+      "accessToken" : "token_prt"
+    }
+  },
+  "getPersonalDataESP" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+      "accessToken" : "token_esp"
+    }
+  },
+  "getPersonalDataPRT" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+      "accessToken" : "token_prt"
+    }
+  }
+ 
+  
+  ,"getContactDataESP_WrongHeader" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+      "accessTokenasd" : "token_esp"
+    }
+  },"getContactDataESP_WithoutAuth" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+    }
+  },"getContactDataESP_WithWrongURL" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data1234",
+    "headers" : {
+      "accessToken" : "token_esp"
+    }
+  },"getContactDataESP_WithWrongAuthToken" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+      "accessToken" : "token_esp1234"
+    }
+    
+  }
+
+  
+  ,"getContactDataPRT_WrongHeader" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+      "accessToken1234" : "token_prt"
+    }
+  },"getContactDataPRT_WithoutAuth" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+    
+    }
+  },"getContactDataPRT_WithWrongURL" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data1234",
+    "headers" : {
+      "accessToken" : "token_prt"
+    }
+  },"getContactDataPRT_WithWrongAuthToken" : {
+    "url" : "http://localhost:9085/wzc-client-profile/contact-data",
+    "headers" : {
+      "accessToken" : "token_prt1234"
+    }
+    } 
+  
+    
+  ,"getPersonalDataESP_WrongHeader" : {
+     "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+      "accessToken" : "token_esp"
+    }
+  },"getPersonalDataESP_WithoutAuth" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+   
+    }
+  },"getPersonalDataESP_WithWrongURL" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data1234",
+    "headers" : {
+      "accessToken" : "token_esp"
+    }
+  },"getPersonalDataESP_WithWrongAuthToken" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+      "accessToken" : "token_esp1234"
+    }
+    
+  }
+ 
+    
+  ,"getPersonalDataPRT_WrongHeader" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+      "accessTokenasd" : "token_prt"
+    }
+  },"getPersonalDataPRT_WithoutAuth" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+    
+    }
+  },"getPersonalDataPRT_WithWrongURL" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data1234",
+    "headers" : {
+      "accessToken" : "token_prt"
+    }
+  },"getPersonalDataPRT_WithWrongAuthToken" : {
+    "url" : "http://localhost:9085/wzc-client-profile/personal-data",
+    "headers" : {
+      "accessToken" : "token_prt1234"
+    }
+    
+  }
+  
+}

@@ -1,0 +1,38 @@
+{
+  "messages" : {
+    "messageId" : "00072d13-e003-e911-813c-005056ac73a1",
+    "subject" : "Message Subject",
+    "body" : "Message Body",
+    "read" : true,
+    "starred" : false,
+    "replyable" : true,
+    "creationDate" : "2022-02-04",
+    "attachments" : [ {
+      "attachmentId" : 1,
+      "name" : "Attachment Name",
+      "extension" : ".jpg"
+    } ]
+  },
+  
+  
+  "deleteMessages" : {
+    "body" : "Message deleted successfully"
+  },
+  
+  
+  "getmessages" : [ {
+    "messageId" : "80d38628-fa07-4531-996d-fd2deb89fa9b",
+    "subject" : "Messages Inbox",
+    "bodyPreview" : "Messages Body",
+    "read" : true,
+    "starred" : false,
+    "hasAttachments" : false,
+    "creationDate" : "2022-02-04"
+  } ],
+  "summary" : {
+    "totalResult" : 1,
+    "pageSize" : 0,
+    "nextPage" : 0,
+    "previousPage" : 0
+  }
+}

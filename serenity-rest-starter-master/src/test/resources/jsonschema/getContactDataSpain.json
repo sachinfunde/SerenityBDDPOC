@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "contactData": {
+      "type": "object",
+      "properties": {
+        "postalAddress": {
+          "type": "object",
+          "properties": {
+            "streetType": {
+              "type": "string"
+            },
+            "streetName": {
+              "type": "string"
+            },
+            "streetNumber": {
+              "type": "string"
+            },
+            "building": {
+              "type": "string"
+            },
+            "gate": {
+              "type": "string"
+            },
+            "stairs": {
+              "type": "string"
+            },
+            "floor": {
+              "type": "string"
+            },
+            "door": {
+              "type": "string"
+            },
+            "complement": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "zipCode": {
+              "type": "string"
+            },
+            "county": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "streetType",
+            "streetName",
+            "streetNumber",
+            "building",
+            "gate",
+            "stairs",
+            "floor",
+            "door",
+            "complement",
+            "city",
+            "zipCode",
+            "county",
+            "country"
+          ]
+        },
+        "emailAddress": {
+          "type": "string"
+        },
+        "landlineNumber": {
+          "type": "string"
+        },
+        "mobileNumber": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "postalAddress",
+        "emailAddress",
+        "landlineNumber",
+        "mobileNumber"
+      ]
+    }
+  },
+  "required": [
+    "contactData"
+  ]
+}

@@ -1,0 +1,106 @@
+
+{
+  "createMessage" : {
+    "url" : "http://localhost:9085/messages",
+    "body" : {
+      "subject" : "Message Subject",
+      "body" : "Message Body"
+    }
+  },
+  "deleteMessage" : {
+    "url" : "http://localhost:9085/messages/msg1",
+    "headers" : {
+      "AT" : "1"
+    }
+  },
+  "getMessageByID" : {
+    "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "AT" : "1"
+    }
+  },
+  "createMessage_wrongHeader" : {
+    "url" : "http://localhost:9085/messages",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "ATasd" : "1"
+    },
+    "body" : {
+      "subject" : "Message Subject",
+      "body" : "Message Body"
+    }
+  },
+  "createMessageWithWrongURL" : {
+    "url" : "http://localhost:9085/messages1234",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "AT" : "1"
+    },
+    "body" : {
+      "subject" : "Message Subject",
+      "body" : "Message Body"
+    }
+  },
+  "createMessageWithWrongAuth" : {
+    "url" : "http://localhost:9085/messages",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "AT" : "2345"
+    },
+    "body" : {
+      "subject" : "Message Subject",
+      "body" : "Message Body"
+    }
+  },
+  "deleteMessage_wrongHeader" : {
+    "url" : "http://localhost:9085/messages/msg1",
+    "headers" : {
+      "ATasd" : "1"
+    }
+  },
+  "deleteMessage_WithoutAuthToken" : {
+    "url" : "http://localhost:9085/messages/msg1",
+    "headers" : { }
+  },
+  "deleteMessage_WithWrongURL" : {
+    "url" : "http://localhost:9085/messages/msg123456",
+    "headers" : {
+      "AT" : "1"
+    }
+  },
+  "deleteMessage_WithWrongAuthToken" : {
+    "url" : "http://localhost:9085/messages/msg1",
+    "headers" : {
+      "AT" : "2345"
+    }
+  },
+  "getMessage_wrongHeader" : {
+    "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "ATasd" : "1"
+    }
+  },
+  "getMessage_WrongAuthToken" : {
+    "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "AT" : "234"
+    }
+  },
+   "getMessage_WithWrongURL" : {
+    "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1234",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "AT" : "1234"
+    }
+  },
+   "getMessage_WithoutAuthToken" : {
+    "url" : "http://localhost:9085/messages?category=received&pageNumber=1&cursorId=1",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "AT" : "1"
+    }
+  }
+}
